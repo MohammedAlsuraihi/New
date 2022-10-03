@@ -1,0 +1,207 @@
+<!DOCTYP html>
+<html lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="افضل واسرع موقع لمعرفة آخر الاخبار العربية والعالمية">
+<meta name="keywords" content="آاخر الاخبار ,الاخبار العاجلة,اخبار رياضية وعلمية واخبار متنوعة">
+<meta name="viewport" content="width=device-width ,initial-scale=-1">
+<title>world news</title>
+<link rel="stylesheet" href="../css/content.css"/>
+<link rel="stylesheet" href="../css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+<script type="text/javascript" src="../engine1/jquery.js"></script>
+</head>
+<body>
+<!--  Start Header -------------------------------------->
+<div class="header">
+<div class="container">
+<div class="top-nav">
+<div class="top-title">
+<h5> This website designed by mohammed alsuraihi - 2019 .776183427 </h5>
+</div>
+<div class="search">
+<input type="search" value="" placeholder="  Search.." /><input type="submit" value="" /> 
+</div>
+</div>
+</div>
+<div class="clearfloat"></div>
+<div class="nav">
+<div class="container">
+<div class="logo">
+<h5><span>world </span> news</h5>
+</div>
+<div class="list">
+<ul>
+<li class="active"><a href="../index.html">Home</a></li>
+<li class="active"><a href="news.html">News</a></li>
+<li class="active"><a href="#">Categories</a>
+<ul class="inner">
+<li><a href="sports.html">Sport</a></li>
+<li><a href="technolog.html">Technology</a></li>
+<li><a href="health.html">Helth</a></li>
+<li><a href="culture.html">culture</a></li>
+</ul>
+</li>
+<li class="active"><a href="program.html">Programs</a></li>
+<li class="active"><a href="artical.html">Articles</a></li>
+<li class="active"><a href="vidoe.html">video</a></li>
+<li class="active"><a href="content.html">Contact</a></li>
+<li class="active"><a href="about.html">About</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="clearfloat"></div>
+</div>
+<!-- End Header  -------------------------------------->
+<section>
+<div   class="acount" >
+<form   method="post"  action="#"  onsubmit="return checkForm(this);">
+username <i class="fa fa-user fa-fw"></i><input  type="text"  id="uname">
+password <i class="fa fa-key fa-fw"></i><input  type="text"   id="pass">
+confirm password  <i class="fa fa-key fa-fw"></i><input  type="text"  id="cpass">
+user email <i class="fa fa-envelope-o fa-fw"></i><input  type="text"  id="email">
+user type <i class="fa fa-users fa-fw"></i><input  type="text"     id="gender">
+<input type="submit" id="submit"  value="Add">
+<img src="../images/boy.jpg" id="output"  >
+<span class="img">
+<i class="fa fa-pencil-square-o fa-fw"></i>
+ Add Image  <input type="file" name="image" id="image" onchange="loadFile(event);">
+ </span>
+<label  id="msg"></label>
+
+</form>
+
+
+</div>
+
+
+
+</section>
+
+<div class="Content"> 
+ 
+
+<div  class="about2">
+<div  class="data">
+<div class="contact_us">
+<h1> contact us </h1>
+<form >
+<label>Email</label><br>
+<input type="text" ><br>
+<label>masseg</label><br>
+<textarea  rows="3" cols="34"></textarea>
+<input type="submit"  value="send" class="submit">
+
+</form>
+</div>
+</div>
+</div>
+
+ 
+
+
+ 
+  
+ 
+
+<div class="clear2">                <!--  في الاسفل foter  لجعل ال  -->
+
+</div> <!-- end clear2 div -->
+<div class='footer'>
+<div class="website">
+<a href="https://www.facebook.com" target='_blank'><img src="../images/facebook.jpg"></a>
+<a href="https://twitter.com/login?lang=ar" target='_blank'><img src="../images/twitter.jpg"></a>
+<a href="https://plus.google.com" target='_blank'><img src="../images/google.jpg"></a>
+<a href="https://www.youtube.com/" target='_blank'><img src="../images/youtube.jpg"></a>
+
+</div> <!-- end website div -->
+ Disgin by : mohammed al-suraihi  <br/> 776183427
+
+</div><!-- end footer div -->
+</div>  <!-- end Content div -->
+
+ 
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script>
+
+			
+ function checkForm(form)
+  {     var  name=document.getElementById('uname').value;
+        var  error;          
+		  if(name=="")
+            {  error="* you must enter your name!"
+           document.getElementById("msg").innerHTML = error;
+		   document.getElementById("uname").style.borderColor="red";
+		   document.getElementById("uname").focus();
+		   
+			}
+		var  name=document.getElementById('pass').value;	
+			
+  
+     /* if(form.old_pass.value != form.curr_pass.value) {
+        alert("خطاء :كلمة المرور الحالية غير صحيحة !");
+        form.new_pass.focus();
+        return false;
+      }
+  
+   if(form.new_pass.value == form.old_pass.value) {
+        alert("Error: كلمة المرور الجديده يجب ان تختلف عن كلمة المرور السايقه!");
+        form.new_pass.focus();
+        return false;
+      }
+	 // if(form.old_pass.value == "") {
+     // alert("خطاء : يجب إددخال كلمة الرور الحالية   !");
+     // form.old_pass.focus();
+     // return false;
+   // }
+   if(form.new_pass.value != "" && form.new_pass.value == form.con_new_pass.value) {
+      if(form.new_pass.value.length < 4) {
+        alert("Error: كلمة المرور يجب ان تحتوي على الاقل على 4 احرف!");
+        form.new_pass.focus();
+        return false;
+      } 
+   
+    re = /^\w+$/;
+    if(!re.test(form.new_pass.value)) {
+      alert("خطاء : كلمة المرور الجديدة يجب ان تحتوي على (ارقام و حوف و علامة _ ) !");
+      form.new_pass.focus();
+      return false;
+    }
+
+    
+     
+      re = /[0-9]/;
+      if(!re.test(form.new_pass.value)) {
+        alert("خطاء : كلمة المرور يجب ان تحتوي على الاقل رقم من  (0-9)!");
+        form.new_pass.focus();
+        return false;
+      }
+      re = /[a-z]/;
+      if(!re.test(form.new_pass.value)) {
+        alert("خطاء : كلمة المرور يجب ان تحتوي على الاقل حرف من  (a-z)!");
+        form.new_pass.focus();
+        return false;
+      }
+     // re = /[A-Z]/;
+      //if(!re.test(form.new_pass.value)) {
+      //  alert("خطاء: كلمة المرور يجب ان تحتوي على الاقل حرف من  (A-Z)!");
+      //  form.new_pass.focus();
+      //  return false;
+     // }
+    } else {
+      alert("خطاء : يجب ان تتاكد ان كلمة المرور متطابقه !");
+      form.new_pass.focus();
+      return false;
+    }
+
+    //alert("أنت قد ادخلت كلمة مرور صحيحة : " + form.new_pass.value); */
+    return false;
+  }
+
+</script>
+
+    </body>
+</html>
